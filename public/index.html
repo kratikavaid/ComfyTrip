@@ -1,0 +1,92 @@
+<html lang="en" >
+   <head>
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>
+  <script type="text/javascript"></script>
+  <script src="javascripts/controller.js"></script>    
+  <style>
+         .datepickerdemo  {
+           height: 100%;
+           background-image: url('./images/Dubai.jpg');
+           background-repeat: no-repeat;
+           background-position: center;
+           /*position: relative;
+           left: -16px;
+           padding-bottom: 200px;*/
+
+          /* height: 650px;
+           width: 550px; */
+         }
+        .datepickerdemo md-card{
+          font-family: cursive;
+        /*  background-image: url("./images/summer-vaca.jpg");
+          background-position: "center";
+          background-size: 800px 100px;
+          background-repeat: no-repeat;*/
+        }
+        .datepickerdemo md-card-title{
+            color: white;
+            background-color: gold;
+            
+        }
+        .temperature {
+          margin-bottom: 0;
+        }
+        .datepickerdemo button{
+          font-weight: bold;
+        }
+        .datepickerdemo .validation-messages {
+            /*font-size: 11px;
+            color: darkred;
+            margin: 10px 0 0 25px; */
+         }
+         .gridListdemoBasicUsage .green {
+             /*background: #b9f6ca; */
+         }
+         
+        /******Places.html*********/
+        .places{
+          background-image: url('./images/Dubai.jpg');
+          background-repeat: repeat-y;
+          background-size: 100% 110%;
+        }
+        .toolbar{
+          background-color: #000 !important;
+          padding-left: 10%;
+          font-family: cursive;
+        }
+        .display-places {
+           /*height: 100%;*/
+/*           background-repeat: repeat-y;
+           background-size: 100% 100%;*/
+           /*padding-top: 20px;*/
+*/        }
+        .city-image{
+          width: 150px;
+          height:100px;
+        }
+        .places-wrapper{
+          padding: 0 20%;
+          height: 90%;
+          /*margin-top: 10px;*/
+          overflow-y: scroll;
+        }
+      </style>
+
+
+         
+   </head>
+
+   <body ng-app="firstApplication" > 
+     <div ng-view></div>
+      
+   </body>
+</html>

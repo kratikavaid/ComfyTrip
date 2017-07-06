@@ -1,0 +1,22 @@
+<div class="places">
+  <md-toolbar class="toolbar">
+    <div class="md-toolbar-tools">
+      <h1 class="md-flex">ComfyTrip</h1>
+    </div>
+  </md-toolbar>
+  <div class="display-places" ng-cloak>
+    <div flex="100" class="places-wrapper" >
+        <md-card flex="100" md-theme-watch ng-repeat="item in places track by $index">
+          <section layout="row">
+            <img class="city-image" ng-src="{{item.imageUrl}}" class="md-card-image">
+            <md-card-content flex layout="row" layout-align="space-around center">
+                <div flex="100" class="md-headline">{{item.city}}</div>
+                <md-button flex="30" class="md-raised"> 
+                    <a href="https://www.goibibo.com/go/f/" target="_blank"> Book Now </a>
+                </md-button>
+            </md-card-content>
+          </section>
+        </md-card>
+      </div>
+  </div>
+</div>

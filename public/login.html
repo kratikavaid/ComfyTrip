@@ -1,0 +1,40 @@
+<div class="datepickerdemo" layout="row" layout-align="center center" ng-cloak >
+  <md-card flex="35" flex-sm="70">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">ComfyTrip</span>
+       
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      
+    <div layout="row" layout-sm="row">
+      <div flex flex-xs="33" flex-sm="50">
+        <h4>From Date</h4>
+        <md-datepicker ng-model="fromDate" md-placeholder="Enter date" md-min-date="minDate" md-max-date="maxDate">
+        </md-datepicker>
+      </div>
+      <div flex flex-xs="33" flex-sm="50">
+        <h4>To Date</h4>
+        <md-datepicker ng-model="toDate" md-placeholder="Enter date" md-min-date="minDate" md-max-date="maxDate"></md-datepicker>
+      </div>
+    </div>
+    <div layout="column" flex-sm="50">
+      <h4 class="temperature"> Temperature </h4>
+       <md-slider-container>
+          <md-slider flex min="-10" max="50" ng-model="temp" ></md-slider>
+          <md-input-container>
+            <input flex type="number" ng-model="temp">
+          </md-input-container>
+       </md-slider-container>
+    </div>
+
+
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="center center" >
+      <md-button type="submit" ng-click="findPlaces()">
+        Find Places
+      </md-button>
+    </md-card-actions>
+  </md-card>
+</div>
